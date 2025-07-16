@@ -61,7 +61,27 @@ public class MainActivity extends AppCompatActivity {
             if(x==3){
                 break;
             }
-            }
+            Animal dogA = new Animal();
+            Animal dogB = new Animal();
+            Animal birdA = new Animal();
+
+            Book book1 = new Book();
+
+            dogA.type = "dog";
+            dogA.hasWing = false;
+            dogA.numberOfLeg = 4;
+            dogA.move();
+
+            birdA.type = "bird";
+            birdA.hasWing = true;
+            birdA.numberOfLeg = 2;
+
+            dogB.type = "dog";
+            dogB.hasWing = false;
+            dogB.numberOfLeg = 4;
+            dogB.move();
+
+        }
         String mess = joinThese("Method","are","cool");
         Log.i("message=",mess);
         float area = getAreaCircle(5f);
